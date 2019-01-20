@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+.main-header{
+    background-image: url("/image/personPage/tite.png");
+    min-height: 400px;
+    background-repeat: no-repeat;
+
+}
+.mo{
+    background-color: aliceblue;
+    opacity: 0.5;
+}
+
+.title2{
+    font-family: Brandon Grotesque Regular;
+    font-size: 1.6em;
+    margin-top: 2em;
+    line-height: 1em;
+    text-align: left;
+}
+
+.two-1{
+    padding: 2em 0 0;
+    border: none;
+}
+.two-2{
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background: none transparent;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid rgba(34,36,38,.15);
+}
+.two-title{
+    font-family: Brandon Grotesque Bold;
+    font-size: 50px;
+    font-weight: lighter;
+    text-align: center;
+}
+.two-line{
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+.two-line2{
+    height: 3px;
+    width: 140px;
+    margin: .25em auto 0;
+    background: -webkit-linear-gradient(10deg,#fc4a1a,#f7b733);
+    background: -o-linear-gradient(10deg,#fc4a1a,#f7b733);
+    background: linear-gradient(80deg,#fc4a1a,#f7b733);
+}
+.two-three{
+    margin: 40px;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+.three{
+    display: block;
+}
+.three-1{
+    margin: 20px;
+    margin-left: 10%;
+}
+.three-p{
+    font-size: 2.6em;
+    color: #ffbf58
+}
+.three-forms{
+    padding: 0;
+}
+.flip-container, .front, .back {
+    width: 100%;
+}
+.flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    height: 520px;
+}
+.front {
+    z-index: 2;
+}
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+#msg-close {
+    position: absolute;
+    left: 90%;
+    background-color: Black;
+    color: White;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.tolong{
+    margin-left: 10%;
+    text-align: center;
+    width: 80%;
+    min-height: 50px;
+}
+.tolong2{
+    margin-left: 10%;
+    text-align: center;
+    width: 80%;
+    min-height: 160px;
+}
+.labels{
+    margin-left: 10%;
+}
+.submit{
+    margin-left: 80%;
+    min-height: 30px;
+}
+.section{
+    padding: 35px 0;
+}
+.highlight-p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.btn-secondary {
+    background: #fff;
+    border: 1px solid rgba(33,150,243,.2);
+    box-shadow: 0 6px 13px -6px rgba(33,150,243,.25);
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #2196f3;
+    text-align: center;
+    transition: all .3s ease;
+}
+.mi{
+    min-height: 20px;
+}
+.highlight-p {
+    font-size: 18px;
+    color: #707070;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+.highlight-ul {
+    list-style-image: url("/image/personPage/gou.png");
+    padding-left: 25px;
+    line-height: 30px;
+}
+.cir{
+    border-radius: 20px;
+}
+

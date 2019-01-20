@@ -1,0 +1,369 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+.logo{
+    font-size: 50px;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    color: #929292;
+    margin-left: 5%;
+}
+.navbar-header {
+    padding: 0 15px;
+    position: relative;
+    z-index: 10;
+    margin-right: 0;
+    margin-left: 0;
+}
+.navbar-brand {
+    float: left;
+    padding: 1.1rem 0;
+    font-size: 20px;
+    line-height: 22px;
+    height: 68px;
+}
+.bor{
+    border-width: 2px;
+    border: #B6B6B6;
+
+}
+.back{
+    overflow: hidden;
+    position: relative;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    height: auto;
+    max-height: none;
+    text-align: left;
+    color: #222;
+    background-image: url(/image/teamPage/1.jpg);
+}
+.m-t-80 {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.m-b-20 {
+    margin-bottom: 20px!important;
+}
+p {
+    font-family: "Gotham Book",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    margin: 0 0 11px;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.m-b-80 {
+    margin-bottom: 70px;
+}
+.btns{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    padding: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.btns2{
+    color: #fff;
+    background-color: #37a000;
+
+    text-align: center;
+}
+.box{
+    min-height: 80px;
+}
+.video {
+    background: hsla(0,0%,100%,.9);
+    height: 50px;
+    padding-bottom: 0;
+}
+.number{
+    background-color: #777bb4;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    padding: 10px 0;
+}
+.numt{
+    min-height: 1px;
+    background: #C8EDF1;
+}
+.num{
+    font-size: 20px;
+}
+.lead{
+    margin-bottom: 22px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-shadow: rgba(254, 255, 222, 0.88) 0 0 10px;
+    color: #6c91f1;
+    font-size:28px;
+}
+.join{
+    margin-top: 16px;
+}
+.tx{
+    display: inline-block;
+    margin: 5px;
+}
+.circle{
+    border-radius: 50%;
+}
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #DFDFDF;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.text-muted {
+    color: #777777;
+}
+.footer-container {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 22px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+.search-container {
+    width: 100%;
+    position: absolute;
+}
+.sign-up-form{
+    position: relative;
+}
+.input-sign-up {
+    background: none;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+    color: rgba(0,0,0,.8);
+    border-radius: 3px 0 0 3px;
+    min-height: 60px;
+}
+.button-sign-up {
+    width: 30%;
+    height: 32px;
+    border-radius: 3px;
+    border: 0;
+    color: white;
+    margin: 6px 0;
+}
+.danger {
+    background-color: #ec1c24;
+    font-weight: bold;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
+    margin-bottom: 1px;
+}
+.input-lg{
+    height: 48px;
+    padding: 10px 16px;
+    font-size: 17px;
+    line-height: 1.5;
+    border-radius: 4px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 32px;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 1.42857;
+    color: #36333f;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.hero_form{
+    border: 2px solid white;
+    padding: 30px 50px 40px 50px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+.submit {
+    position: relative;
+}
+.hero_form button {
+    width: 100%;
+    position: absolute;
+    top: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid white !important;
+}
+.mt-1{
+    margin-top: 1.8em;
+}
+.boxed-sm{
+    padding: 1.2em;
+}
+.boxed{
+    border-radius: 3px;
+}
+.text-left {
+    text-align: left;
+}
+.inp{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+.qinput {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+.area{
+    padding: 0 15px;
+    background: #fff;
+}
+.contents{
+    max-width: 1375px;
+    margin: 0 auto;
+    min-height: 64px;
+    padding-top: 11px;
+    position: relative;
+}
+h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.work-box{
+    overflow: hidden;
+    padding: 13px 0 0 0;
+}
+.w1{
+    width: 25%;
+}
+.w2{
+    float: left;
+}
+.w3{
+    float: left!important;
+}
+.step{
+    padding: 0 10px;
+    padding-bottom: 36px;
+}
+.lu{
+    width: 100%;
+    height: 20px;
+    background: url('/image/teamPage/zhi.png')repeat-x bottom;
+    margin-bottom: 16px;
+    position: relative;
+}
+.lu small{
+    width: 20px;
+    height: 20px;
+    background: #fbc72b;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+.img-circle {
+
+    border-radius: 60%;
+}
+.creatTeam{
+    text-shadow:#FDFBC7 0 0 10px;
+    color:white;
+    font-size:30px;
+    text-align: center;
+}
+
+.clip-text_one {
+    background-image: url(/image/teamPage/ziti.png);
+}
+.clip-text {
+    font-size: 6em;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    margin: .25em;
+    padding: .5em .75em;
+    text-align: center;
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.how-1{
+    width: 100%;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    margin: .25em;
+    padding: .5em .75em;
+    text-align: center;
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.toCenter{
+   margin-left: 12% ;
+    margin-right: 12%;
+}

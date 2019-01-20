@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.model.User" table="user" schema="imooc">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="userNumber">
+            <column name="userNumber" sql-type="varchar(30)" length="30"/>
+        </property>
+        <property name="password">
+            <column name="password" sql-type="varchar(30)" length="30"/>
+        </property>
+        <property name="nickName">
+            <column name="nickName" sql-type="varchar(30)" length="30"/>
+        </property>
+        <property name="phoneNumber">
+            <column name="phoneNumber" sql-type="varchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="email">
+            <column name="email" sql-type="varchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="realName">
+            <column name="realName" sql-type="varchar(30)" length="30"/>
+        </property>
+        <property name="sex">
+            <column name="sex" sql-type="int(4)" not-null="true"/>
+        </property>
+        <property name="img">
+            <column name="img" sql-type="blob" not-null="true"/>
+        </property>
+        <property name="type">
+            <column name="type" sql-type="int(4)" not-null="true"/>
+        </property>
+        <property name="teamName">
+            <column name="teamName" sql-type="varchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="proName">
+            <column name="proName" sql-type="varchar(30)" length="30" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

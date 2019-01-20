@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+.below-navbar {
+    background-color: white;
+    margin-top: 59px;
+    height: 100%;
+}
+.futura-title-spaced {
+    letter-spacing: 5px;
+}
+.futura-title {
+    font-family: "futura-book";
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 30px 0px;
+    font-weight: normal;
+}
+input, textarea{
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}
+.search-form-control {
+    color: #212121;
+    border-bottom: 5px solid #212121;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+    font-size: 45px;
+    font-family: "futura-light";
+    outline: none;
+    background-color: transparent;
+}
+form .button-view {
+    margin-left: -100px;
+}
+.button-view-small {
+    font-size: 9px;
+    padding: 10px 25px;
+}
+.button-view {
+    text-align: center;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: 1px solid #32CD64;
+    color: #32CD64;
+    font-family: "futura-book";
+    text-transform: uppercase;
+    background-color: transparent;
+    outline: none;
+    letter-spacing: 3px;
+    font-size: 11px;
+}
+.bigr{
+    margin-top: 100px;
+}
+.supercool-shadow {
+    margin-bottom: 50px;
+    max-height: 600px;
+    border-radius: 3px;
+    margin-top: 50px;
+    padding: 5% 5% 10% 5%;
+    transition: 0.5s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.bg-white {
+    background: white;
+    color: #212121;
+}
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin-left: 28%;
+    box-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+.somes{
+    text-align: center;
+}
+.r1{
+    position: relative;
+    float: left;
+    margin-left: 6%;
+    margin-top: 16px;
+}
+
+.cool-shadow {
+    margin-bottom: 50px;
+    max-height: 600px;
+    border-radius: 3px;
+    margin-top: 50px;
+    padding: 5% 5% 10% 5%;
+    transition: 0.5s ease;
+    -webkit-transition: 0.3s ease;
+}
+.supercool-shadow {
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+}
+.im{
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+body {
+    font-family: "futura-book";
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333333;
+    background-color: #eeeeee;
+}
+.bt{
+    margin-left: 13%;
+    text-align: center;
+    color: #c7c7c7;
+}
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 22px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    text-align: center;
+}
+.pt{
+    text-align: center;
+}
+.toR{
+    margin-left: 10%;
+}

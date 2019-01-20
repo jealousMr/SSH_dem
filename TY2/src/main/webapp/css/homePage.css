@@ -1,0 +1,271 @@
+@charset "utf-8";
+/* CSS Document */
+.bb{
+    color: #505050;
+    line-height: 1.75em;
+    background: #ebebeb;
+    position: relative;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei","Microsoft YaHei UI","Microsoft YaHei",sans-serif;
+}
+.go{
+    margin-bottom: 5%;
+    text-align: center;
+}
+.main-header {
+    text-align: center;
+    padding: 42px 0;
+    background-image: url("/image/homePage/1.png");
+    min-height: 500px;
+}
+.yin{
+    background-color: white;
+    opacity: 0.5;
+
+}
+.post{
+    padding: 35px;
+    background: #fff;
+    margin-bottom: 35px;
+    position: relative;
+    overflow: hidden;
+}
+.post-head{
+    text-align: center;
+}
+.post-title{
+    margin: 0;
+    font-size: 2em;
+    line-height: 1.2em;
+}
+.post-content{
+    font: 400 18px/1.62 Georgia,"Xin Gothic","Hiragino Sans GB","Droid Sans Fallback","Microsoft YaHei",sans-serif;
+    color: #444443;
+}
+.post-footer{
+    margin-top: 30px;
+    border-top: 1px solid #ebebeb;
+    padding: 21px 0 0;
+}
+.featured-media {
+    margin-top: 30px;
+    overflow: hidden;
+}
+.widget{
+    background: #fff;
+    padding: 21px 30px;
+    margin: 22px;
+}
+.pagination {
+    margin: 0 0 35px;
+    text-align: center;
+    display: block;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.search-container {
+    width: 100%;
+    position: absolute;
+}
+.search-wrapper {
+    position: relative;
+}
+.main-footer {
+    background: #202020;
+    padding: 35px 0 0;
+    color: #959595;
+}
+.home-main{
+    margin-top: -82px;
+    min-height: 800px;
+    position: relative;
+}
+.section-title {
+    text-align: center;
+    text-shadow: 0 0 5px rgba(82,82,99,.6), 0 0 10px rgba(82,82,99,.6);
+
+}
+button {
+    display: inline;
+    margin: 0;
+    height: 50px;
+    border-radius: 25px;
+    float: right;
+    position: relative;
+}
+.search-form button .icon {
+    margin: 0 5px;
+}
+.icon {
+    line-height: inherit;
+}
+.inp1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-color: transparent;
+    box-shadow: none;
+    opacity: 1;
+    background: none 97% 50% / auto 60% no-repeat scroll padding-box border-box rgb(255, 255, 255);
+    height: 50px;
+}
+.inp2{
+    position: relative;
+    vertical-align: top;
+    background-color: transparent;
+    height: 50px;
+}
+.titleSize{
+    font-size: 50px;
+}
+.fa{
+    font-size: 40px;
+}
+.tou{
+    margin: 20px;
+    padding: 2px;
+
+}
+.card{
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    padding: 70px 60px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #2f2e2e;
+}
+.infobox {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    position: relative;
+    color: #707070;
+
+}
+.spox{
+    margin-bottom: 16px;
+}
+.spans {
+    margin-left: 25px;
+    margin-right: 15px;
+    font-size: 18px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #000;
+
+}
+.olbox{
+    margin-left: 15px;
+    margin-right: 15px
+}
+.point {
+    margin-right: 10px;
+    color: #81B3B2;
+    margin-top: 15px;
+}
+.domx{
+    min-height: 30px;
+}
+li{
+    list-style: none;
+}
+.shi-1{
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.09);
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.06);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 35px;
+    max-width: 300px;
+    margin: 35px auto 0;
+}
+.shi-2{
+    font-weight: 700;
+    padding: 20px;
+    font-size: 18px;
+    background-color: #ececec;
+    padding: 15px 20px;
+}
+.shi-3{
+    font-size: 15px;
+    padding: 20px 20px 10px;
+}
+.shi-4{
+    font-size: 20px;
+    color: rgba(0,0,0,.7);
+}
+.shi-4{
+    padding: 10px 10px 10px;
+
+}
+.shi-5{
+    background: none;
+    color: #247db0;
+    border: 1px solid #247db0;
+    margin-bottom: 10px;
+}
+.teams{
+    background: white;
+}
+.divider {
+    position: absolute;
+    overflow: visible;
+    border-color: aliceblue;
+
+}
+.f1{
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0 1px 0 0 #e2e2e2;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    text-align: center
+}
+.f1-in{
+    display: flex;
+    padding: 20px;
+}
+.related-logo {
+    margin: 20px auto;
+    width: 150px;
+    height: 120px;
+    text-align: center;
+}
+.card-meta {
+    margin-bottom: -4px;
+    overflow: hidden;
+}
+.f1-title{
+    text-align:center;
+    padding:30px;
+    color:#1a1a1a;
+    font-family:华康少女;
+    font-size:40px;
+    margin-top:5px;
+    margin-bottom:20px;
+}
+@font-face {
+    font-family: '华康少女';
+    src: url('/fonts/华康少女字体.ttf');
+}
+
+.weigh{
+    margin-bottom: 35px;
+    padding: 0 30px;
+}
+.ts{
+    margin-left: 5px;
+}
+.tip{
+    display: none;
+    text-align: left;
+    border: 1px #74c0f9 solid;
+    background: #FFF;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    color: #323232;
+}
+

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/imooc</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <mapping resource="com/model/Credit.hbm.xml"/>
+    <mapping class="com.model.Credit"/>
+    <mapping resource="com/model/Project.hbm.xml"/>
+    <mapping class="com.model.Project"/>
+    <mapping resource="com/model/Team.hbm.xml"/>
+    <mapping class="com.model.Team"/>
+    <mapping resource="com/model/User.hbm.xml"/>
+    <mapping class="com.model.User"/>
+    <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

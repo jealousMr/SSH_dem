@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+.person-div {
+    width: 420px;
+    padding: 2%;
+    margin: auto;
+}
+.person-div form {
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 26px 24px 46px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+}
+.person-div form p {
+    margin-bottom: 0;
+}
+.person-div  label {
+    color: #72777c;
+    font-size: 14px;
+}
+.person-div input[type=text] {
+    background: #fbfbfb;
+}
+.person-div form .input, .person-div input[type=text] {
+    font-size: 24px;
+    width: 100%;
+    padding: 3px;
+    margin: 2px 6px 16px 0;
+}
+.person-div  form p.submit {
+    margin: 0;
+    padding: 0;
+}

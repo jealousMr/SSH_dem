@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="false"/>
+    <constant name="struts.objectFactory" value="spring" />
+    <constant name="struts.multipart.saveDir" value="/tmp"></constant>
+
+    <package name="userOne" namespace="/view" extends="struts-default">
+        <action name="login" class="com.action.UserAction" method="login">
+            <result name="success">homePage.jsp</result>
+            <result name="input">login.jsp</result>
+            <result name="twoUser">two/home.jsp</result>
+        </action>
+        <action name="updateImg" class="com.action.UserAction" method="updateImg">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="fileUpload" >
+                <param name="maximumSize">1048576</param>
+                <param name="allowedTypes">
+                    image/bmp,image/jpg,image/png,image/gif,image/jpeg
+                </param>
+            </interceptor-ref>
+            <result name="success">personPage.jsp</result>
+        </action>
+        <action name="updateImg2" class="com.action.UserAction" method="updateImg2">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="fileUpload" >
+                <param name="maximumSize">1048576</param>
+                <param name="allowedTypes">
+                    image/bmp,image/jpg,image/png,image/gif,image/jpeg
+                </param>
+            </interceptor-ref>
+            <result name="success">two/person.jsp</result>
+        </action>
+        <action name="enterPersonPage" class="com.action.UserAction" method="enterPersonPage">
+            <result>personPage.jsp</result>
+        </action>
+        <action name="getOwnImg" class="com.action.UserAction" method="getOwnImg"></action>
+        <action name="enterTeamPage" class="com.action.TeamAction" method="enterTeamPage">
+            <result>teamPage.jsp</result>
+        </action>
+        <action name="getTeamMemberImg" class="com.action.TeamAction" method="getTeamMemberImg"></action>
+        <action name="enterProjectPage" class="com.action.ProjectAction" method="enterProjectPage">
+            <result>projectPage.jsp</result>
+        </action>
+        <action name="typeProject" class="com.action.ProjectAction" method="typeProject">
+            <result>projectPage.jsp</result>
+
+        </action>
+
+        <action name="teamToHome" class="com.action.UserAction" method="teamToHome">
+            <result>homePage.jsp</result>
+        </action>
+        <action name="memberImg" class="com.action.TeamAction" method="memberImg"></action>
+        <action name="enterPerson" class="com.action.UserAction" method="enterPerson">
+            <result>two/person.jsp</result>
+        </action>
+        <action name="enterProjectTwo" class="com.action.UserAction" method="enterProjectTwo">
+            <result>two/project.jsp</result>
+        </action>
+        <action name="getProImg" class="com.action.ProjectAction" method="getProImg"></action>
+        <action name="projectImg" class="com.action.ProjectAction" method="projectImg">
+            <result name="success">two/project.jsp</result>
+        </action>
+        <action name="getUserTwoImg" class="com.action.ProjectAction" method="getUserTwoImg"/>
+        <action name="twoPtoH" class="com.action.UserAction" method="twoPtoH">
+            <result>two/home.jsp</result>
+        </action>
+        <action name="tonext" class="com.action.ProjectAction" method="tonext">
+            <result>homePage.jsp</result>
+        </action>
+        <action name="enterSearchProject" class="com.action.UserAction" method="enterSearchProject">
+            <result>searchPage.jsp</result>
+        </action>
+        <action name="getPui" class="com.action.ProjectAction" method="getPui"></action>
+        <action name="homeToSearchProject" class="com.action.UserAction" method="homeToSearchProject">
+            <result>searchPage.jsp</result>
+        </action>
+        <action name="searchProjectPage" class="com.action.UserAction" method="searchProjectPage">
+            <result>searchPage.jsp</result>
+            <result name="input">searchPage.jsp</result>
+        </action>
+        <action name="enterHomePage" class="com.action.UserAction" method="enterHomePage">
+            <result>homePage.jsp</result>
+        </action>
+        <action name="proType" class="com.action.ProjectAction" method="proType">
+            <result>searchPage.jsp</result>
+        </action>
+        <action name="getTu" class="com.action.CommentAction" method="getTu"></action>
+        <action name="eh" class="com.action.UserAction" method="eh">
+            <result>two/home.jsp</result>
+        </action>
+        <action name="enterRegister" class="com.action.UserAction" method="enterRegister">
+            <result name="success">registerPage.jsp</result>
+        </action>
+        <action name="enterPayPage" class="com.action.PayAction" method="enterPayPage">
+            <result>payPage.jsp</result>
+        </action>
+    </package>
+
+
+
+
+
+    <package name="sync" extends="json-default,struts-default" namespace="/view">
+        <action name="deleteOne" class="com.action.TeamAction" method="deleteOne">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="enterCommentPage" class="com.action.CommentAction" method="enterCommentPage">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="register" class="com.action.UserAction" method="register">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="searchProject" class="com.action.ProjectAction" method="searchProject">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="updatePersonMes" class="com.action.UserAction" method="updatePersonMes">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="searchTeam" class="com.action.TeamAction" method="searchTeam">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="createTeam" class="com.action.TeamAction" method="createTeam">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="joinTeam" class="com.action.TeamAction" method="joinTeam">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="outTeam" class="com.action.TeamAction" method="outTeam">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="joinProject" class="com.action.ProjectAction" method="joinProject">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="teamProject" class="com.action.TeamAction" method="teamProject">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="teamMessage" class="com.action.TeamAction" method="teamMessage">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="searchUser" class="com.action.UserAction" method="searchUser">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="showSearchUser" class="com.action.UserAction" method="showSearchUser">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="addProject" class="com.action.ProjectAction" method="addProject">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="getMoreProject" class="com.action.ProjectAction" method="getMoreProject">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="becomeExecutor" class="com.action.ProjectAction" method="becomeExecutor">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="cancelApplicant" class="com.action.ProjectAction" method="cancelApplicant">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="endProject" class="com.action.ProjectAction" method="endProject">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="findPro" class="com.action.CommentAction" method="findPro">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+        <action name="commentMes" class="com.action.CommentAction" method="commentMes">
+            <interceptor-ref name="defaultStack" />
+            <interceptor-ref name="json"/>
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+    </package>
+
+
+
+</struts>

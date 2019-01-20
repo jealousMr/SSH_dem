@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+.form-wrapper {
+    width: 500px;
+    height: 430px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    background-image: repeating-linear-gradient(135deg,#844049,#844049, #fff 50px, #fff 150px, #3e4996 100px, #3e4996, #fff 200px, #fff 300px);
+}
+
+.formw {
+    display: block;
+    margin-top: 0em;
+}
+.form-inner {
+    margin: 0 auto;
+    padding: 35px 0;
+    width: 96%;
+    height: 99%;
+    background: #fff;
+}
+.form-wrapper label {
+    font: bold 18px/25px Corbel, Arial, Helvetica;
+    text-shadow: 0 1px 0 #fff, 0 2px 0 #ccc;
+    float: left;
+    margin-right: 10px;
+    width: 40%;
+    margin-left: 2%;
+}
+.form-wrapper .input {
+    font: 15px Arial, Helvetica;
+    padding: 5px;
+    margin: 0 0 20px 0;
+    border: 1px solid #b9bdc1;
+    width: 90%;
+    color: #797979;
+    -moz-box-shadow: 0 2px 4px #bbb inset;
+    -webkit-box-shadow: 0 2px 4px #bbb inset;
+    box-shadow: 0 2px 4px #bbb inset;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin-left: 2%;
+}
+.form-wrapper .button {
+    float: right;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    padding: 7px 15px;
+    cursor: pointer;
+    color: #fff;
+    font: bold 13px Tahoma, Verdana, Arial;
+    text-transform: uppercase;
+    overflow: visible;
+    border: 0;
+    background-color: #7089b3;
+    background-image: linear-gradient(#a5b8da, #7089b3);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 3px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 200px;
+}
